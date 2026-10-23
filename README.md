@@ -1,44 +1,67 @@
 # Recallit — AZ-900 Study Companion
 
-Recallit is a lightweight study companion being developed for the **Vibe Coding Hackathon: AZ-900 Exam Prep Edition**.
+**Learn it. Test it. Recall it.**
 
-The goal is to help learners prepare for the Microsoft Azure Fundamentals (AZ-900) certification through practice questions, flashcards, explanations, and progress tracking.
+Recallit is a lightweight, interactive study companion built for learners preparing for the Microsoft Azure Fundamentals (AZ-900) certification. It brings practice questions, explanations, flashcards, and topic progress into one focused learning experience.
 
-**Project status:** MVP in development.
+Built for the **Vibe Coding Hackathon: AZ-900 Exam Prep Edition (#1MillionDevs)**, Recallit explores how a learner's own preparation journey can inspire a more useful way to study.
 
-## Project Goals
+## The Problem
 
-Recallit aims to make AZ-900 revision more interactive and help learners identify topics that need more practice.
+Preparing for a certification exam can become a cycle of reading notes, answering questions, and forgetting concepts later. Learners need more than a score: they need opportunities to practise, understand mistakes, revisit key concepts, and monitor their progress.
 
-The project focuses on three exam domains:
+## The Solution
 
-1. Cloud concepts
-2. Azure architecture and services
-3. Azure management and governance
+Recallit brings essential study activities together in one place:
 
-## Current Features
+- **Practice:** Answer multiple-choice questions and review explanations.
+- **Flashcards:** Review key concepts through active recall.
+- **Topic-based learning:** Study Cloud Concepts, Azure Architecture and Services, and Azure Management and Governance.
+- **Progress tracking:** Follow study activity and topic progress to help decide what to review next.
 
-- **Dashboard:** View study progress and revision activity.
-- **Practice questions:** Answer multiple-choice questions and receive immediate feedback and explanations.
-- **Flashcards:** Practise active recall of key concepts.
-- **Topic tracking:** Review progress across study topics.
-- **Progress persistence:** Save study progress locally in the browser.
+The goal is to make exam preparation more structured, approachable, and focused on understanding rather than memorising answers alone.
+
+## Features
+
+### Practice Questions
+
+- A starter bank of 30 AZ-900 practice questions.
+- Multiple-choice answers with explanations.
+- Questions organised around the main AZ-900 exam domains.
+
+### Flashcard Coach
+
+- Review essential cloud and Azure terminology.
+- Reveal definitions and explanations during revision.
+- Reinforce concepts through repeated practice.
+
+### Study Dashboard
+
+- Navigate between study activities.
+- View topic-level progress and learning statistics.
+- Use a responsive interface on desktop and mobile screens.
+
+### Learning-First Design
+
+Recallit combines practice and review in one place, helping learners move from answering a question to revisiting the underlying concept.
 
 ## Technology Stack
 
-- React
-- Vite
-- JavaScript
-- CSS
-- Git and GitHub
+- **React** — user interface
+- **Vite** — development server and production build
+- **JavaScript** — application logic
+- **CSS** — responsive styling
+- **Browser local storage** — local study progress
+- **Git and GitHub** — version control and collaboration
 
 ## Getting Started
 
 ### Prerequisites
 
-Install Node.js and npm.
+- Node.js and npm
+- Git
 
-### Installation
+### Run Locally
 
 Clone the repository:
 
@@ -59,60 +82,77 @@ Start the development server:
 npm run dev
 ```
 
-Open the local URL displayed in the terminal.
+Open the local URL printed by Vite in your terminal.
 
-### Production Build
-
-To check whether the application builds successfully, run:
+### Verify the Production Build
 
 ```bash
 npm run build
 ```
 
-## Practice Question Contributions
+Vite generates the production output in the `dist/` directory.
 
-The project needs original, accurate practice questions that help beginners understand AZ-900 concepts.
+## Project Structure
 
-For the initial review, the question contributor will prepare **three sample questions**:
+```text
+recallit/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+```
 
-- One about cloud concepts
-- One about Azure architecture and services
-- One about Azure management and governance
+## What Makes Recallit Different?
 
-Each question should include:
+Recallit is designed around a simple learning loop:
 
-- Topic and learning objective
-- Question written in original wording
-- Four answer options
-- One correct answer
-- A beginner-friendly explanation
-- A reference source URL, where available
-- Verification status: `Needs Review` or `Verified`
+**Practise → Understand → Recall → Review**
 
-Questions should be checked for technical accuracy before being added to the application. Uncertain answers must be marked `Needs Review`.
+Rather than treating an exam score as the only outcome, Recallit brings questions, explanations, flashcards, and progress into a single study workflow.
 
-The first three questions will be reviewed before the question bank is expanded.
+The project is an initial step toward more personalised revision, where learners can use their performance to identify knowledge gaps and focus their next study session.
 
-## Contribution Guidelines
+## Current Scope and Limitations
 
-- Keep contributions focused on the hackathon assignment.
-- Write clear, beginner-friendly content.
-- Use original practice questions; do not copy real certification exam questions or exam dumps.
-- Explain why the correct answer is correct.
-- Verify technical claims against reliable documentation.
-- Test changes before proposing them for integration.
-- Coordinate with the project maintainer before changing application code or shared files.
+Recallit is an MVP, and its current capabilities should be understood accordingly.
 
-## Disclaimer
+- The question bank is a starter set, not comprehensive coverage of the entire AZ-900 syllabus.
+- Practice questions are intended for learning and revision, not as a prediction of official exam results.
+- Study progress is stored locally in the browser; cross-device synchronisation and user accounts are not currently part of the documented MVP.
+- AI tutoring and AI-generated study plans are future improvements unless implemented and verified in a later version.
 
-Recallit is an independent educational project. It is not affiliated with, endorsed by, or sponsored by Microsoft.
+## Future Improvements
 
-AZ-900 is a Microsoft certification. The practice questions in Recallit are original learning materials and are not actual Microsoft certification exam questions.
+- Personalised study plans based on missed questions.
+- Stronger readiness insights across exam domains.
+- Expanded question coverage mapped to official learning objectives.
+- More detailed explanations and links to trusted learning resources.
+- Optional AI-assisted explanations with source verification.
 
-## Project Repository
+## Responsible Use
 
-GitHub: https://github.com/Markle-art/recallit
+Recallit is an independent learning project. It is not affiliated with, endorsed by, or an official product of Microsoft.
 
-## Project Objective
+Microsoft Azure and AZ-900 are Microsoft trademarks. Users should consult the official exam study guide and Microsoft Learn for authoritative and up-to-date preparation material.
 
-Build a useful, responsive AZ-900 study companion that supports active recall, provides meaningful explanations, and helps learners identify areas for further revision.
+Official resource: [Microsoft Azure Fundamentals (AZ-900)](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/)
+
+## Hackathon Context
+
+Built for the **Vibe Coding Hackathon: AZ-900 Exam Prep Edition (#1MillionDevs)**, inspired by the theme:
+
+*Building Smarter Exam Prep Tools from Our Own Learning Journey.*
+
+The project demonstrates an accessible, hands-on approach to building a focused study tool using modern web technologies.
+
+## Author and Repository
+
+**GitHub:** [Markle-art/recallit](https://github.com/Markle-art/recallit)
+
+
+Contributions, suggestions, and feedback that improve the learning experience are welcome.
